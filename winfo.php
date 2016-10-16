@@ -5,7 +5,8 @@
   <?php
 $m=new MongoClient();
 $db = $m->cards;
-
+  session_start();
+$user = isset($_SESSION['is_loggedin']) && $_SESSION['is_loggedin'] ? $_SESSION['user'] : false;
 $collection = $db->wedding;
 {
 $document = array(
@@ -15,6 +16,7 @@ $document = array(
                 "VENUE"=>"$_POST[address]",
 		"EVENT DATE"=>"$_POST[dob]",
 		"EVENT TIME"=>"$_POST[time]",
+		'user_id'=> $user['_id']
 		);
 $collection->insert($document);
 }

@@ -1,0 +1,169 @@
+body{
+margin:0px;
+padding:0px;
+}
+
+.head1{
+margin-left:190px;
+color:#FCEC0A;
+}
+.head2{
+
+margin-left:600px;
+}
+
+.top1{
+width:100%;
+height:62px;
+background-color:gray;
+margin-top:30px;
+
+}
+
+ul{ width=100%;
+    list-style-type: none;
+    margin: auto;
+    <!--padding: 0px;-->
+    overflow: hidden;
+	margin-left:250px;
+    
+}
+ul.topbar li{
+    float:left;
+	width=100%;
+	margin-left:200px;
+	margin: auto;
+    <!--padding-left: 90px;-->
+}
+ul.topbar li a{
+    margin:auto;
+	margin-top:7px;
+    margin-left:60px;
+    display: inline-block;
+    color:black;
+    text-align: centre;
+    padding: 10px 10px;
+    text-decoration: none;
+    width=100%;
+    font-size: 20px;
+	font-family:Castellar;
+}
+
+a:hover{
+float:center;
+display: inline-block;
+
+background-color:#B8B3B2;
+}
+div.transbox{
+margin-top:50px;
+margin-left:190px;
+margin-right:200px;
+
+}
+
+.slide
+{
+   margin-top: 40px;
+}
+
+
+
+.dropbtn {
+   margin-left:40px;
+   background-color:gray;
+    color: black;
+    padding: 18px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    font-family:Castellar;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    
+    background-color:white; 
+    min-width: 5px;
+    
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #B8B3B2;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #B8B3B2;
+}
+
+.my-account {
+    color: white;
+    float: right;
+    /* overflow: hidden; */
+    width: 30%;
+    margin-left: 10%;
+}
+
+html .top1 {
+    clear: both;
+     margin-top: 70px; 
+}
+
+.order-container {
+    margin: auto;
+    width: 80%; 
+    color: white;
+}
+
+.orders .heading:first-child
+{
+    margin-top: 50px;
+}
+.orders .heading {
+    font-size: 2em;
+    clear: both;
+    margin-top: 140px;
+    margin-bottom: 10px;
+}
+
+.column-heading > div {
+    float: left;
+    width: 170px;
+    font-size: 14px;
+    font-weight:bold;
+    padding:5px;
+}
+
+.content-wrapper > div {
+    float: left;
+    width: 170px;
+    padding: 5px;
+}
+
+.column-heading  {
+ clear:both;
+
+}
+
+.content-wrapper {
+ clear:both;
+}
+
+.record-not-exists {
+    margin-top: 30px;
+    clear:both;
+}
