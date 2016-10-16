@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script></script>
+<style>
+body{
+margin:0px;
+padding:0px;
+}
+
+.head1{
+margin-left:190px;
+color:#FCEC0A;
+}
+.head2{
+
+margin-left:600px;
+}
+
+.top1{
+width:100%;
+height:62px;
+background-color:gray;
+margin-top:30px;
+
+}
+
+ul{ width=100%;
+    list-style-type: none;
+    margin: auto;
+    <!--padding: 0px;-->
+    overflow: hidden;
+	margin-left:250px;
+    
+}
+ul.topbar li{
+    float:left;
+	width=100%;
+	margin-left:200px;
+	margin: auto;
+    <!--padding-left: 90px;-->
+}
+ul.topbar li a{
+    margin:auto;
+	margin-top:7px;
+    margin-left:60px;
+    display: inline-block;
+    color:black;
+    text-align: centre;
+    padding: 10px 10px;
+    text-decoration: none;
+    width=100%;
+    font-size: 20px;
+	font-family:Castellar;
+}
+
+a:hover{
+float:center;
+display: inline-block;
+
+background-color:#B8B3B2;
+}
+div.transbox{
+margin-top:50px;
+margin-left:190px;
+margin-right:200px;
+
+}
+
+.slide
+{
+   margin-top: 40px;
+}
+
+
+
+.dropbtn {
+   margin-left:40px;
+   background-color:gray;
+    color: black;
+    padding: 18px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    font-family:Castellar;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    
+    background-color:white; 
+    min-width: 5px;
+    
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #B8B3B2;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #B8B3B2;
+}
+
+
+</style>
+</head>
+<body background="img/a2.jpg">
+
+<p class="head1"><font face="Shivaji02" size="25"><b><i>आमंत्रण &nbsp;</i></b></font><font size="5" color="#FCEF6F"></font><p>
+</p>
+
+
+
+<div class="top1">
+<ul class="topbar">
+<li><a href="#point"><b>HOME</b></a></li>
+<li><a href="about"><b>ABOUT</b></a></li>
+<li><a href="contact1.html" target="_parent"><b>CONTACT</b></a></li>
+<li><div class="dropdown">
+  <button class="dropbtn"><b>INVITATION</b></button>
+  <div class="dropdown-content">
+    <a href="birthday.html"><b>BIRTHDAY</b></a>
+    <a href="wedding.html"><b>WEDDING</b></a>
+    <a href="vastu.html"><b>VASTU PUJA</b></a>
+  </div></li>
+<li><a href="signup.html"><b>SIGNUP</b></a></li>
+<li><a href=""><b>LOGGED IN</b></a></li>
+</ul>
+</div>
+
+
+<center><div class="slide" style="max-width:60%">
+  <img class="mySlides" src="img/k.jpg" style="width:100%">
+  <img class="mySlides" src="img/s2.jpg" style="width:100%">
+  <img class="mySlides" src="img/s3.jpg" style="width:100%">
+  <img class="mySlides" src="img/s4.jpg" style="width:100%">
+  <img class="mySlides" src="img/s5.jpg" style="width:100%">
+  <img class="mySlides" src="img/s6.jpg" style="width:100%">
+</div></center>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+</body>
+</html>

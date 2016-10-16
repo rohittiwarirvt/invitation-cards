@@ -1,0 +1,94 @@
+﻿<html>
+	<head>
+		
+
+		<link rel="stylesheet" type="text/css" href="style_basic.css" />
+<script language="javascript">
+function validate()
+ {
+    var x = document.forms["form"]["bname"].value;
+    var y = document.forms["form"]["bname"].value;
+    if (x == null || x == "")
+    {
+        alert("Name must be filled out");
+        return false;
+    }
+
+    if (y==9)
+    {
+        alert("Name should contain only characters");
+        return false;
+    }
+ }
+
+    
+</script>
+	</head>
+
+<body background="img/a2.jpg" >
+
+	
+<form method="post" action="vinfo2.php" onsubmit="return validate()" name="form">
+
+<table align="center">
+
+<th colspan="2">
+<font face="AR DESTINE"  size="30px" color="#FCEF6F"><h3>BUY IT!!!</h3></font>
+</th>
+
+<tr>
+<td>
+<font face="AR DESTINE"  size="30px" color="white"><p>Name: </td> <td><input type="text" id="e" name="bname" value="" size="30" style="height:30px"></p><font>
+</td>
+</tr>
+				
+
+
+
+<tr>
+<td>
+<font face="AR DESTINE"  size="30" color="white"><p>Venue:</td> <td><textarea cols="29" rows="2" name="address" required></textarea></p><font>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<font face="AR DESTINE"  size="30" color="white"><p>Event Date:</B> </td> <td> <input type="date" name="dob" value="" required><font>
+</td>
+</tr>
+
+					
+
+
+<tr>
+<td>
+<font face="AR DESTINE"  size="30" color="white"><p>Event Time:</B> </td> <td> <input type="time" name="time" value="" required><font>
+</td>
+</tr>
+
+
+					
+
+
+<tr>
+<td>
+<font face="AR DESTINE"  size="30px"><td><input type="submit" name="Submit" value="Submit" required></td><font>
+</td>
+</tr>
+
+<tr>
+<td>
+<font face="AR DESTINE"  size="30px"><td><input type="reset" name="button1" value="Reset" required> </td><font>
+</td>
+</tr>
+
+</table>
+</form>
+
+
+
+
+</body>
+
+</html>
